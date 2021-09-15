@@ -1,5 +1,6 @@
 import User from "../models/user.model"
 import errorHandler from "../halpers/dbErrorHandler"
+import validator from 'validator';
 
 const create = (req, res, next) => {
     const user = new User(req.body);

@@ -1,0 +1,126 @@
+.registar form, .login form, .dashboard, .homePage {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 4em 4em 2em;
+  max-width: 400px;
+  box-shadow: 0 0 1em #222;
+  border-radius: 2px;
+}
+
+form p {
+  margin: 5px;
+}
+
+.registar, .login, .dashboard, .homePage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.registar form h2, .login form h2 {
+  margin: 0 0 20px 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: lightslategray;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.registar form input, .login form input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  margin: 0;
+}
+
+.registar input[type="text"], input[type="password"], .login input[type="text"], input[type="password"] {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  font-size: 1.6em;
+  padding: .8em .5em;
+  border-radius: 2px;
+}
+
+.registar form span, .login form span {
+  display: block;
+  background: #F9A5A5;
+  padding: 2px 5px;
+  color: #666;
+}
+
+.registar form label, .login form label {
+  position: relative;
+  left: 8px;
+  top: 12px;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.registar form label.floatLabel, .login form label.floatLabel {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.registar form button, .login form button, .dashboard button, .homePage button {
+  background: rgba(148, 186, 101, 0.7);
+  box-shadow: 5px 5px 0px 0px rgb(148 186 101);
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2em;
+  line-height: 1.6em;
+  margin: 10px 0 0;
+  outline: none;
+  padding: .6em 0;
+  text-shadow: 0 1px #68B25B;
+  width: 100%;
+}
+
+.login form button, #login {
+  background: #2196f3;
+  box-shadow: 5px 5px 0px 0px #1565c0;
+  text-shadow: 0 1px #1565c0
+}
+
+.dashboard button {
+  background: rgb(196, 46, 46);
+  box-shadow: 5px 5px 0px 0px rgb(99, 7, 7);
+  text-shadow: 0 1px rgb(54, 1, 1)
+}
+
+.registar form .error, .login form .error {
+  text-align: center;
+  padding: 3px;
+  color: red;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.homepageButtons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.homePage h2 {
+  margin: 0 0 20px 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: lightslategray;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.dashboard {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+}

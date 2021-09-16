@@ -4,7 +4,6 @@ import config from "../config/config";
 
 
 const signin = (req, res) => {
-    console.log(req.body)
     User.findOne({ "email": req.body.email }, (err, user) => {
         if (err || !user) {
             return res.status("401").json({

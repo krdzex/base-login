@@ -1,9 +1,11 @@
 import mongoose from "mongoose";
 import crypto from 'crypto';
+
 const UserSchema = new mongoose.Schema({
 
     name: {
         type: String, trim: true,
+        unique: "Name already exists",
         required: "Name is required"
     },
     email: {
